@@ -1,0 +1,133 @@
+.loading {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.beepImg {
+    position: absolute;
+    z-index: 1;
+     top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fir {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 90px;
+  background: rgba(2, 2, 2, 0.03);
+  /* background-color: black; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: first 2.9s ;
+}
+
+@keyframes first {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.sec {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: rgba(2, 2, 2, 0.03);
+  /* background-color: red; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: second 3s infinite;
+  /* animation-delay: 5s; */
+}
+@keyframes second {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.thi {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(2, 2, 2, 0.03);
+  /* background-color: blue; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: third 3.1s infinite;
+  /* animation-delay: 10s; */
+}
+
+.beep {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes third {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.content h2 {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #020202;
+}
+
+.content p {
+  margin: 0;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: rgba(2, 2, 2, 0.3);
+}
+
+
+
